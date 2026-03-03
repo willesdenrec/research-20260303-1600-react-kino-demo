@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <link rel="icon" type="image/svg+xml" href="/vite.svg" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>React-Kino Demo | Cinematic Scroll Storytelling</title>
+    <meta name="description" content="Educational demo project showcasing React-Kino - cinematic scroll-driven storytelling for React">
+    <meta name="keywords" content="React, scroll, animation, storytelling, cinematic, parallax, demo, educational">
+    <meta name="author" content="willesdenrec">
+    
+    <!-- Open Graph / Facebook -->
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="https://github.com/willesdenrec/research-20260303-1600-react-kino-demo">
+    <meta property="og:title" content="React-Kino Demo | Cinematic Scroll Storytelling">
+    <meta property="og:description" content="Educational demo project showcasing React-Kino - cinematic scroll-driven storytelling for React">
+    <meta property="og:image" content="https://repository-images.githubusercontent.com/1171790425/3c5eae00-12d5-4e5b-b3d5-e5b3c5eae001">
+    
+    <!-- Twitter -->
+    <meta property="twitter:card" content="summary_large_image">
+    <meta property="twitter:url" content="https://github.com/willesdenrec/research-20260303-1600-react-kino-demo">
+    <meta property="twitter:title" content="React-Kino Demo | Cinematic Scroll Storytelling">
+    <meta property="twitter:description" content="Educational demo project showcasing React-Kino - cinematic scroll-driven storytelling for React">
+    <meta property="twitter:image" content="https://repository-images.githubusercontent.com/1171790425/3c5eae00-12d5-4e5b-b3d5-e5b3c5eae001">
+    
+    <!-- Preload critical resources -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    
+    <style>
+      /* Critical CSS for initial load */
+      * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+      }
+      
+      body {
+        font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, sans-serif;
+        background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+        min-height: 100vh;
+        overflow-x: hidden;
+      }
+      
+      #root {
+        min-height: 100vh;
+      }
+      
+      .loading {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        min-height: 100vh;
+        color: white;
+        font-size: 1.5rem;
+        text-align: center;
+        padding: 2rem;
+      }
+      
+      .loading-spinner {
+        width: 50px;
+        height: 50px;
+        border: 3px solid rgba(255, 255, 255, 0.3);
+        border-radius: 50%;
+        border-top-color: white;
+        animation: spin 1s ease-in-out infinite;
+        margin-bottom: 1rem;
+      }
+      
+      @keyframes spin {
+        to { transform: rotate(360deg); }
+      }
+    </style>
+  </head>
+  <body>
+    <div id="root">
+      <div class="loading">
+        <div>
+          <div class="loading-spinner"></div>
+          <p>Loading React-Kino Demo...</p>
+          <p style="font-size: 1rem; opacity: 0.8; margin-top: 0.5rem;">
+            Cinematic scroll-driven storytelling for React
+          </p>
+        </div>
+      </div>
+    </div>
+    <script type="module" src="/src/main.jsx"></script>
+    
+    <!-- Google Analytics (optional) -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-XXXXXXXXXX"></script>
+    <script>
+      window.dataLayer = window.dataLayer || [];
+      function gtag(){dataLayer.push(arguments);}
+      gtag('js', new Date());
+      gtag('config', 'G-XXXXXXXXXX');
+    </script>
+  </body>
+</html>
